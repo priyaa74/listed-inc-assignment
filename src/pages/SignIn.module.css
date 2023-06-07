@@ -1,0 +1,33 @@
+.leftSide{
+    position: absolute;
+width: 588px;
+height: 100vh;
+left: 0px;
+top: 0px;
+
+background: #000000;
+}
+.board{
+    position: absolute;
+width: 246px;
+height: 88px;
+left: 171px;
+top: 50%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 88px;
+color: #FFFFFF;
+}
+
+.rightSide{
+    
+position: absolute;
+width: 852px;
+height: 100vh;
+left: 588px;
+top: 0px;
+background: #F5F5F5;
+}
