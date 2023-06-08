@@ -6,8 +6,7 @@ import SignIn from './pages/SignIn';
 function App() {
   return (
     <div className="App">
-      <Header/>
-    {/* <AllRoutes/> */}
+    <AllRoutes/>
     </div>
   );
 }

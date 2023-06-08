@@ -32,6 +32,7 @@ function OAuth() {
                     })
                     .then((res) => {
                         setProfile(res.data);
+                        localStorage.setItem("user", JSON.stringify(res));
                         navigate('/dashboard');
 
                     })

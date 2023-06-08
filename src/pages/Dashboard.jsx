@@ -1,8 +1,16 @@
 import React from 'react'
+import Header from '../components/Header'
+import Sidebar from '../components/Sidebar'
+import Cards from '../components/Cards'
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div>
+      <Header/>
+      <Cards/>
+      <Sidebar/>
+
+    </div>
   )
 }
 

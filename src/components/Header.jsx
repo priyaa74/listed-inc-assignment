@@ -1,16 +1,34 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom';
+import { googleLogout} from '@react-oauth/google';
+
 
 function Header() {
+  const navigate= useNavigate();
+  const picture= JSON.parse(localStorage.getItem("user"));
+
+  const logOut =() =>{
+    var txt;
+    if (window.confirm("Do you wish to LogOut!")) {
+      txt = "You pressed OK!";
+      localStorage.removeItem("user");
+      googleLogout();
+      navigate('/');
+    } else {
+      txt = "You pressed Cancel!";
+    }
+   console.log(txt);
+}
   return (
-    <div>Header
+    <div>Dashboard
         <div>
         <input type="search" placeholder='Search...' />
-        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="5" cy="5" r="4.5" stroke="#858585"/>
-<line x1="8.35355" y1="7.64645" x2="12.3536" y2="11.6464" stroke="#858585"/>
-</svg>
+        <img src="/assets/search.svg" alt="search" />
         </div>
         <img src="/assets/notifications.svg" alt="notific" />
+        <div>
+          <img src={picture.data.picture} alt="userImg" onClick={logOut} />
+        </div>
        
 
 
