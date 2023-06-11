@@ -41,7 +41,7 @@ function ScheduleCard() {
              textDecoration:"none",
              color:" #858585"
 
-        }} to='/seeAll'><span>See All</span>
+        }} to='#seeAll'><span>See All</span>
         <img src="/assets/arrowRight.svg" alt="" /></Link>
         </div>
         <div>

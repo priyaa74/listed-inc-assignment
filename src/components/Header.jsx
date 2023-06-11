@@ -35,7 +35,7 @@ lineHeight: "29px"
       Dashboard
       </div>
 
-        <div style={{display:"flex", alignItems:"center", gap:"30px"}}>
+        <div style={{display:"flex", alignItems:"center", gap:"10px"}}>
           <div style={{display:"flex",alignContent:"center"}}>
         <input style={{width: "140px", height:"30px", padding:"0 20px", border: "transparent", borderRadius:"10px 0 0 10px"}} type="search" placeholder='Search...' />
         <img style={{backgroundColor:"#FFFFFF",width:"20px", height:"30px", borderRadius:"0 10px 10px 0"}} src="/assets/search.svg" alt="search" />

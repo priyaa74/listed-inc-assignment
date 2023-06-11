@@ -26,7 +26,7 @@ function Activities() {
 
   return (
     <div style={{
-         width:"98%", 
+         width:"96.45%", 
          height:"25%",
          margin:"10px 0",
          backgroundColor:"#FFFFFF",

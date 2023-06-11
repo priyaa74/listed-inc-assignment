@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "./Cards.module.css"
 
 function Cards() {
 
@@ -31,10 +32,10 @@ function Cards() {
     ]
 
     return (
-        <div style={{ display: "flex", gap: "36.84px"}}>
+        <div className={styles.container}>
             {cards.map((card, index) => {
                 return (
-                    <div style={{ backgroundColor: card.bgColor, height: "100px", width: "100%", padding:"20px", borderRadius: "20px" }}>
+                    <div  className={styles.cards} style={{ backgroundColor: card.bgColor, height: "100px", padding:"20px", borderRadius: "20px" }}>
                         <div style={{ display: "flex", justifyContent: "end"}}>
                             <img src={card.icon} />
                         </div>

@@ -45,3 +45,31 @@ color: #FFFFFF;
     margin: 140px 0 20px 0;
 
 }
+
+@media (max-width:800px){
+    .leftSide{
+        width: 100%;
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 5px;
+        margin: 0;
+    }
+    .heading{
+        display: none;
+    }
+    .nav{
+        flex-direction: row;
+        align-items: center;
+    }
+    .navTitle{
+        display: none;
+    }
+    .navFooter{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+}

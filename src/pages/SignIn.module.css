@@ -108,7 +108,26 @@ line-height: 19px;
     border: transparent;
 
 }
-
-
-
-
+@media (max-width: 800px) {
+    .signIn{
+        display: flex;
+        flex-direction: column;
+    }
+.leftSide{
+width: 100%;
+height: 80px;
+}
+.rightSide{
+    width: 100%;
+}
+.formContainer{
+    width: 80%;
+    margin: auto;
+}
+.board{
+    font-size: 44px;
+}
+.accounts{
+    flex-direction: column;
+}
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "./Dashboard.module.css"
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header'
 import Cards from '../components/Cards'
@@ -9,13 +10,13 @@ import TopProducts from '../components/TopProducts';
 
 function Dashboard() {
   return (
-    <div style={{width:"100vw",height: "100%", display:"flex", backgroundColor:"#F5F5F5"}}>
+    <div className={styles.container} >
     <Sidebar/>
-    <div style={{width: "70%",height:"100%", margin:"auto"}}>
+    <div  className={styles.rightSide}>
    <Header/>
    <Cards/>
    <Activities/>
-   <div style={{display:"flex", gap:"40px"}}>
+   <div className={styles.products}>
    <TopProducts/>
    <ScheduleCard/>
    </div>
