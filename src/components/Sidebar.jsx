@@ -1,7 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import styles from './Sidebar.module.css'
 
 function Sidebar() {
+    const linkStyles={
+        textDecoration: "none",
+        color: "#FFFFFF"
+    }
     const options = [
         {
             icon: "/assets/dashboard.svg",
@@ -31,21 +36,23 @@ function Sidebar() {
       
     ]
   return (
-    <div>
-        <h1>Board.</h1>
-        <div style={{backgroundColor:"black"}}>
+    <div className={styles.leftSide}>
+        <div className={styles.container}>
+        <h1 className={styles.heading}>Board.</h1>
+        <div className={styles.nav}>
             {options.map((ele, index)=>{
                 return(
-                    <div>
+                    <div className={styles.navElements}>
                     <img src={ele.icon} />
-                    <span>{ele.title}</span>
+                    <span className={styles.navTitle}>{ele.title}</span>
                     </div>
                 );
             })}
         </div>
-        <div>
-         <Link to='/help'> Help</Link>
-         <Link to='/contact'> Contact Us</Link>
+        <div className={styles.navFooter}>
+         <Link style={linkStyles} to='#help'> Help</Link>
+         <Link style={linkStyles} to='#contact'> Contact Us</Link>
+        </div>
         </div>
     </div>
   )

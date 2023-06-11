@@ -1,13 +1,11 @@
 import React,{useState , useEffect} from 'react';
-import { useGoogleLogin, googleLogout} from '@react-oauth/google';
-import {FcGoogle} from 'react-icons/fc'
+import { useGoogleLogin} from '@react-oauth/google';
 import {useNavigate} from 'react-router-dom'
 import axios from 'axios';
 
 function OAuth() {
 
     const [ user, setUser ] = useState("");
-    const [ profile, setProfile ] = useState(null);
     const navigate = useNavigate();
 
     const login = useGoogleLogin({
@@ -15,10 +13,7 @@ function OAuth() {
         onError: (error) => console.log('Login Failed: ',error)
     })
 
-    const logOut =() =>{
-        googleLogout();
-        setProfile(null);
-    }
+  
 
     useEffect(
         () => {
@@ -31,7 +26,6 @@ function OAuth() {
                         }
                     })
                     .then((res) => {
-                        setProfile(res.data);
                         localStorage.setItem("user", JSON.stringify(res));
                         navigate('/dashboard');
 
@@ -44,20 +38,17 @@ function OAuth() {
 
     return (
        <div>
-            {profile ? (
-                <div>
-                    <img src={profile.picture} alt="user image" />
-                    <h3>User Logged in</h3>
-                    <p>Name: {profile.name}</p>
-                    <p>Email Address: {profile.email}</p>
-                    <br />
-                    <br />
-                    <button onClick={logOut}>Log out</button>
-                </div>
-            ) : (
-                <button onClick={() => login()}> <FcGoogle/> Sign in with Google </button>
-            )}
-
+                <button style={{width: "180px",
+fontFamily: 'Montserrat',
+fontWeight: "400",
+fontSize: "12px",
+lineHeight: "15px",
+backgroundColor: "#FFFFFF",
+borderRadius: "10px",
+border: "transparent",
+textAlign: "center",
+height:"30px"}} 
+                onClick={() => login()}> <img style={{marginTop:"2px"}} src="/assets/google.svg" alt="" /> Sign in with Google </button>
        </div>
     )
 }

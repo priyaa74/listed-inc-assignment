@@ -1,33 +1,114 @@
+.signIn{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: scroll;
+}
+
 .leftSide{
-    position: absolute;
-width: 588px;
-height: 100vh;
-left: 0px;
-top: 0px;
 
+width: 40.83%;
+height: 100%;
 background: #000000;
-}
-.board{
-    position: absolute;
-width: 246px;
-height: 88px;
-left: 171px;
-top: 50%;
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 72px;
-line-height: 88px;
-color: #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
+.board{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    color: #FFFFFF;
+    }
 
 .rightSide{
-    
-position: absolute;
-width: 852px;
-height: 100vh;
-left: 588px;
-top: 0px;
-background: #F5F5F5;
+  
+    width: 59.16%;
+    height: 100%;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    }
+
+.formContainer{
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
 }
+
+.heading{
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+margin-top:26%;
+}
+
+.heading2{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: -10%;
+}
+
+.accounts{
+    display: flex;
+    gap: 25px;
+    align-content: center;
+}
+
+.accounts > button{
+width: 180px;
+height: 30px;
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+background-color: #FFFFFF;
+border-radius: 10px;
+border: transparent;
+}
+
+.form{
+height: 317px;
+border-radius: 20px;
+background-color: #FFFFFF;
+display: flex;
+flex-direction: column;
+margin-top: 25px;
+}
+.form > * , .formContainer > p:last-child{
+ font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+.form > label{
+    margin: 30px 0 10px 30px;
+}
+.form > :link{
+    margin: 30px 0 20px 30px;
+}
+
+.form > input{
+    
+    margin: 0 30px -10px 30px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    border: transparent;
+
+}
+
+
+
+
