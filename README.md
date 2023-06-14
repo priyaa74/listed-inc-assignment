@@ -14,6 +14,6 @@ The dashboard page is the main interface of the application. It presents users w
 ![](https://github.com/priyaa74/listed-inc-assignment/blob/main/dashboard-mobile.png)
 
 ### To run this repository on your local environment, follow the steps mentioned below:
-Clone this repository using the command "git clone https://github.com/priyaa74/listed-inc-assignment.git. Paste this command in the terminal.
-Then run command "npm install" to install the modules and dependencies.
-Finally run npm start and you will be able to see the file on "http://localhost:3000/"
+- Clone this repository using the command "git clone https://github.com/priyaa74/listed-inc-assignment.git. Paste this command in the terminal.
+- Then run command "npm install" to install the modules and dependencies.
+- Finally run npm start and you will be able to see the file on "http://localhost:3000/"
